@@ -18,12 +18,12 @@ def mostrar_datos(datos):
 
 
     print("\n--- Contenido Actual del JSON ---")
-    for "usuario" in datos["usarios"]:
+    for usuario in datos["usuarios"]:
         print("ID:", usuario["id"], ", Nombre:", usuario["nombre"], ", Edad:", usuario["edad"])
     print("--- Fin del Contenido ---")
 
 
-def inicializar_datos():
+def inicializar_datos(archivo_origen, archivo_destino):
     try:
         with open(archivo_origen, "r") as origen:
             datos = json.load(origen)
