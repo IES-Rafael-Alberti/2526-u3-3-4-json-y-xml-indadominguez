@@ -147,23 +147,23 @@ def main():
         datos = {"usuarios": []}
 
     mostrar_datos(datos)
-    input("Presione una tecla para continuar . . .")
+    input("Presione una tecla para continuar . . .\n")
 
     # 2. Actualizar la edad de un usuario
     actualizar_usuario(datos, id_usuario=1, nueva_edad=31)
     mostrar_datos(datos)
-    input("Presione una tecla para continuar . . .")
+    input("Presione una tecla para continuar . . .\n")
 
     # 3. Insertar un nuevo usuario
     nuevo_usuario = {"id": 3, "nombre": "Pedro", "edad": 40}
     insertar_usuario(datos, nuevo_usuario)
     mostrar_datos(datos)
-    input("Presione una tecla para continuar . . .")
+    input("Presione una tecla para continuar . . .\n")
     
     # 4. Eliminar un usuario
     eliminar_usuario(datos, id_usuario=2)
     mostrar_datos(datos)
-    input("Presione una tecla para continuar . . .")
+    input("Presione una tecla para continuar . . .\n")
 
     # 5. Guardar los datos de nuevo en el fichero JSON
     guardar_json(archivo_destino, datos)
